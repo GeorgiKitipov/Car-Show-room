@@ -1,0 +1,686 @@
+*
+{
+    margin: 0 ;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*--- Main nav section ---*/
+
+.main-nav
+{
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.main-nav ul li
+{
+    display: inline-block;
+    list-style-type: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    margin-left: -0.3rem;
+    transition: 0.3s;
+}
+.main-nav ul li:hover
+{
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgb(110, 110, 26);
+}
+.main-nav ul a
+{
+    text-decoration: none;
+}
+
+
+/*--- Drop down menu---*/
+
+.dropbtn 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown 
+{
+    position: relative;
+    display: none;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.dropdown:hover .dropbtn 
+{
+    background-color: #3e8e41;
+}
+
+/*---End Drop down menu---*/
+
+
+
+
+
+
+/*---End of Main nav section ---*/
+
+/*--- home section ---*/
+.home
+{
+    background-image: url(../img/toyota-bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 22rem;
+    padding-top: 18rem;
+}
+.home-header
+{
+    width: 70rem;
+    border: solid 2px rgb(167, 167, 53);
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    filter: blur(1.5px);
+}
+.home-header h1
+{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 5px black;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+.home-header h3
+{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 5px black;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+/*---The end home section ---*/
+
+
+
+.hte-newest-cars {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(84, 77, 8);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    border-top: solid 2px rgb(84, 77, 8);
+    border-bottom: solid 2px rgb(84, 77, 8);
+    padding: 3rem 0rem;
+}
+.hte-newest-cars h1 {
+    color: rgb(14, 14, 14);
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+.hte-newest-cars h3 {
+    color: rgb(23, 23, 23);
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-shadow: 1px 1px 30px #b7b7b7;
+}
+
+
+
+/*---Cars section---*/
+
+.race-cars
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/toyota1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.dark
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.car-img-container
+{
+    overflow: hidden;
+    height: 16rem;
+    width: 24rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0.5rem 2rem;
+}
+.car-img-container img
+{
+    height: 16rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease ;
+}
+.car-img-container img:hover
+{
+    transform: scale(1.1);
+}
+
+.car-colection
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 4rem;
+}
+.img-info
+{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.767);
+    z-index: 2;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    margin-top: -3.25rem;
+}
+.img-info h1
+{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(189, 187, 61);
+    margin-top: 0.5rem;
+}
+
+/*---End Cars section---*/
+
+
+.city-cars
+{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 8, 8);
+    overflow: hidden;
+    padding: 5rem 0;
+    
+}
+.rotate 
+{
+    width: 143rem;
+    height: 5rem;
+    background-color: yellow;
+    transform: rotate(35deg);
+    float: right;
+    margin-right: -20rem;
+    margin-top: -10rem;
+
+}
+.rotate h1
+{
+    text-align: center;
+    margin-left: 58rem;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0.5rem;
+    color: rgb(56, 56, 56);
+    text-shadow: 1px 1px 5px #695050;
+}
+
+.second
+{
+    margin-right: -33rem;
+}
+.car-cont-img
+{
+    width: 30rem;
+    height:40rem;
+    margin-top: 10rem !important;
+    text-align: center;
+
+    float: left;
+
+}
+
+/*--- Footer ---*/
+.main-footer
+{
+    background-color: black;
+    padding: 2rem 2rem;
+    height: 12rem;
+}
+.logo img
+{
+    height: 11rem;
+}
+.logo
+{
+    height: 11rem;
+    width:15rem;
+    display: inline-block;
+}
+.Policy
+{
+    height: 12rem;
+    width: 45rem;
+    display: inline-block;
+    margin-left: 10rem;
+}
+.Policy h1
+{
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(20, 20, 20);
+    letter-spacing: 0.1rem;
+    color: rgb(231, 231, 231);
+}
+.Policy p
+{
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+.copy
+{
+    background-color: rgb(119, 90, 36);
+    color: rgb(221, 221, 221);
+    text-align: center;
+    height: 1.5rem;
+    padding-top: 0.5rem;
+}
+.btn-holder
+{
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    background-color: rgb(8, 8, 8);
+}
+.to-top
+{
+    width: 6rem;
+    height: 2rem;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(201, 145, 42);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    transition: 0.4s;
+    border-radius: 10px 10px 0 0;
+}
+.to-top:hover
+{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color:rgb(201, 145, 42);
+    color: rgb(8, 8, 8);
+}
+.btn-holder a
+{
+    text-decoration: none;
+
+}
+
+/*---End Footer ---*/
+
+/*--- Race cars page---*/
+.race-home
+{
+    background-image: url(../img/race-bg.jpg);
+}
+.race-cars-btn
+{
+    background-color: black;
+}
+.race-cars-btn-top
+{
+    position: relative;
+    top: -2rem !important;
+}
+/*---End Race cars page---*/
+
+
+/*--- City cars page---*/
+.city-home
+{
+    background-image: url(../img/city-bg.jpg);
+}
+
+/*---MEdia---*/
+
+@media (max-width:1196px)
+{
+    .Policy 
+    {
+        margin-left: 3rem;
+        
+    }
+}
+@media (max-width:1160px)
+{
+    .Policy 
+    {
+        width: 31rem;
+    }
+}
+@media (max-width:1160px)
+{
+    .home-header 
+    {
+        width: 54rem;
+    }
+    .home-header h1 
+    {
+        font-size: 2.5rem;
+    }
+    .home-header h3 
+    {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:923px)
+{
+    .second {
+        margin-right: 0rem !important;
+        position: relative;
+        top: 41rem;
+    }
+    
+    .rotate {
+        width: 58rem;
+        height: 5rem;
+        background-color: yellow;
+        transform: rotate(0deg) !important;
+        float: right;
+        margin-right: 0rem !important;
+        margin-top: 0rem !important;
+    }
+    .rotate h1 
+    {
+        margin-left: 0rem !important;
+        font-size: 2.5rem;
+    }
+    .car-cont-img {
+        width: 56rem;
+        margin-top: -2rem !important;
+    }
+
+        
+}
+@media (max-width:877px)
+{
+    .home-header {
+        width: 37rem;
+    }
+    .home-header h1 {
+        font-size: 2rem;
+    }
+    .home-header h3 {
+        font-size: 1.1rem;
+    }
+    .Policy {
+        display: block;
+        margin: 0 auto;
+        margin-top: 4rem !important;
+        margin-bottom: 4rem !important;
+    }
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+    .main-footer {
+        background-color: black;
+        padding: 2rem 2rem;
+        height: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:702px)
+{
+    .car-cont-img {
+        width: 44rem;
+    }
+    .rotate {
+        width: 56rem;
+    }
+    .hte-newest-cars h1 {
+        font-size: 3rem;
+    }
+    .hte-newest-cars h3 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:635px)
+{
+    .home-header {
+        width: 26rem;
+    }
+    .home-header h1 {
+        font-size: 1.5rem;
+    }
+    .home-header h3 {
+        font-size: 0.9rem;
+    }
+    .rotate h1 {
+        margin-left: 0rem !important;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .rotate {
+        width: 45rem;
+    }
+}
+@media (max-width:538px)
+{
+    .car-cont-img {
+        width: 33rem;
+    }
+    .hte-newest-cars h1 {
+        font-size: 2.2rem;
+    }
+    .hte-newest-cars h3 {
+        font-size: 1rem;
+    }
+    .Policy {
+        width: 16rem;
+    }
+    .main-footer {
+        height: 40rem;
+    }
+    .rotate h1 {
+        margin-left: 0rem !important;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .rotate {
+        width: 34rem;
+    }
+
+
+
+    .dropbtn 
+    {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }
+    .dropdown 
+    {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content 
+    {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.582);
+        min-width: 35rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a 
+    {
+        color: rgb(231, 231, 231);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 1rem 1.5rem;
+        transition: 0.3s;
+    }
+
+    .dropdown-content a:hover 
+    {
+        transition: 0.3s;
+        background-color: rgb(110, 110, 26);
+    }
+    .dropdown:hover .dropdown-content 
+    {
+        display: block;
+    }
+    .dropdown:hover .dropbtn 
+    {
+        background-color: #afb83c;
+    }
+
+    .main-nav ul
+    {
+        display: none;
+    }
+}
+@media (max-width:538px)
+{
+    .home-header {
+        width: 19rem;
+    }
+    .home-header h1 {
+        font-size: 1.2rem;
+    }
+    .hte-newest-cars h1 {
+        font-size: 2rem;
+    }
+    .hte-newest-cars h3 {
+        font-size: 0.9rem;
+    }
+    .car-cont-img {
+        width: 29rem;
+    }
+    
+}
+@media (max-width:436px)
+{
+    .car-img-container img {
+        height: 14rem;
+    }
+    .car-img-container {
+        overflow: hidden;
+        height: 16rem;
+        width: 22.1rem;
+    }
+    .spec-info
+    {
+        width: 100%;
+        width: 95.6%;
+        margin-left: 0.5rem;
+    }
+    .img-info {
+        margin-top: -3.75rem;
+    }
+
+}
+@media (max-width:415px)
+{
+    .car-img-container {
+        overflow: hidden;
+        height: 16rem;
+        width: 20.1rem;
+    }
+    .spec-info {
+        width: 100% !important;
+        margin-left: 0rem !important;
+    }
+    .car-cont-img {
+        width: 23rem;
+    }
+
+}
+@media (max-width:384px)
+{
+    .car-img-container img {
+        height: 10rem;
+    }
+    .car-img-container {
+        overflow: hidden;
+        height: 10rem;
+        width: 15.1rem;
+    }
+    .second {
+        top: 28rem;
+    }
+    .car-cont-img {
+        width: 24rem;
+        height: 27rem;
+    }
+}
+@media (max-width:348px)
+{
+    .home-header {
+        width: 14rem;
+    }
+}
